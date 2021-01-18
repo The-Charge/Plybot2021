@@ -78,5 +78,16 @@ differentialDrive1.setMaxOutput(1.0);
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
+    public void driveArcade(double speed, double rotation)
+    {
+        // Params are speed, rotation.
+        differentialDrive1.arcadeDrive(speed, rotation);
+    }
+
+    public void stop()
+    {
+        differentialDrive1.arcadeDrive(0, 0);
+    }
+
 }
 
