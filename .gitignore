@@ -27,3 +27,21 @@ hs_err_pid*
 
 # Ignore build/tmp files
 build/tmp
+
+# Ignore build folder
+build
+
+# Stuff below I copied from https://github.com/Open-RIO/.gitignore/blob/master/.gitignore
+run/
+.gradle/
+gradle/.launch/
+
+# Backup files
+*~
+
+# WPILib
+bin/
+build/
+dist/
+sysProps.xml
+workbench.xmi
