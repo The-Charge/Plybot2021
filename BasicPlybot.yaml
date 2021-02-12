@@ -323,7 +323,7 @@ Children:
           default: whenPressed
           name: When to Run
           validators: null
-          value: whenHeld
+          value: whenPressed
       Base: Joystick Button
       Name: Button1
     Properties:
