@@ -21,3 +21,27 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Make sure gradle wrapper jar is added:
+!gradle/wrapper/gradle-wrapper.jar
+
+# Ignore build/tmp files
+build/tmp
+
+# Ignore build folder
+build
+
+# Stuff below I copied from https://github.com/Open-RIO/.gitignore/blob/master/.gitignore
+run/
+.gradle/
+gradle/.launch/
+
+# Backup files
+*~
+
+# WPILib
+bin/
+build/
+dist/
+sysProps.xml
+workbench.xmi
