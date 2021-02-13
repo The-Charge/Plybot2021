@@ -71,5 +71,9 @@ flywheelMotor = new WPI_TalonFX(5);
     public void run(double speed) {
         flywheelMotor.set(speed);
     }
-    
+
+    public double getVelocity() {
+        return flywheelMotor.getSelectedSensorVelocity();
+    }
+
 }
