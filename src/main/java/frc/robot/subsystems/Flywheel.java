@@ -24,15 +24,24 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonFX;
  *
  */
 public class Flywheel extends SubsystemBase {
-private WPI_TalonFX flywheelMotor;
+    private WPI_TalonFX flywheelMotor;
+
     public Flywheel() {
         flywheelMotor = new WPI_TalonFX(5);
+        initializeMotors();
     }
 
     @Override
     public void periodic() {
         // This method will be called once per scheduler run
 
+    }
+
+    public void initializeMotors() {
+        //reverses the direction of the motors
+        flywheelMotor.setInverted(true);
+        //specifies unit of measurement
+        flywheelMotor.set(ControlMode.PercentOutput, 0);
     }
 
     @Override
@@ -44,7 +53,7 @@ private WPI_TalonFX flywheelMotor;
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     public void run(double speed) {
-        flywheelMotor.set(speed);
+        flywheelMotor.set(ControlMode.PercentOutput, speed);
     }
 
 }
