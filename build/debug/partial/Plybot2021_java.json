@@ -3,8 +3,8 @@
     "name": "Plybot2021 (in project Plybot2021)",
     "file": "C:\\workspace\\Plybot2021\\build\\libs\\Plybot2021.jar",
     "extensions": [
-      "C:\\workspace\\Plybot2021\\build\\tmp\\expandedArchives\\halsim_gui-2021.1.2-windowsx86-64.zip_a65f029882460810c7d9fdb675bf2f07\\windows\\x86-64\\shared\\halsim_gui.dll",
-      "C:\\workspace\\Plybot2021\\build\\tmp\\expandedArchives\\halsim_ds_socket-2021.1.2-windowsx86-64.zip_f20bc948dbaa43f185b274998a8d049b\\windows\\x86-64\\shared\\halsim_ds_socket.dll"
+      "C:\\workspace\\Plybot2021\\build\\tmp\\expandedArchives\\halsim_gui-2021.2.1-windowsx86-64.zip_d99e9955ea409a7181a100ca5ccfa1fc\\windows\\x86-64\\shared\\halsim_gui.dll",
+      "C:\\workspace\\Plybot2021\\build\\tmp\\expandedArchives\\halsim_ds_socket-2021.2.1-windowsx86-64.zip_298d0267aec4b74c1e06d46e7058a467\\windows\\x86-64\\shared\\halsim_ds_socket.dll"
     ],
     "env": {},
     "librarydir": "C:\\workspace\\Plybot2021\\build\\tmp\\jniExtractDir",
