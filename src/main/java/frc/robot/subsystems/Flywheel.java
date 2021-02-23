@@ -38,7 +38,7 @@ public class Flywheel extends SubsystemBase {
 
     public void initializeMotors() {
         // reverses the direction of the motors
-        flywheelMotor.setInverted(true);
+        flywheelMotor.setInverted(false);
         // specifies unit of measurement
         flywheelMotor.set(ControlMode.PercentOutput, 0);
     }
@@ -51,8 +51,12 @@ public class Flywheel extends SubsystemBase {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-    public void run(double speed) {
-        flywheelMotor.set(ControlMode.PercentOutput, speed);
+    public void run(double speed, boolean pressed) {
+        if (pressed) {
+            flywheelMotor.set(ControlMode.PercentOutput, speed);
+        } else {
+            flywheelMotor.set(ControlMode.PercentOutput, 0);
+        }
     }
 
 }
